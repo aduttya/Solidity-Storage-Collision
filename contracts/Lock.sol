@@ -24,16 +24,16 @@ contract Lock {
         address account,
         uint8 reputation_score,
         uint createdAt,
-        string memory handle,
-        string memory profession,
+        string memory _handle,
+        string memory _profession,
         string memory Country,
         string memory timezone
     ) public{
         _owners[msg.sender].account = account;
         _owners[msg.sender].reputation_score = reputation_score;
         _owners[msg.sender].createdAt = createdAt; 
-        _owners[msg.sender].handle = handle;
-        _owners[msg.sender].profession = profession;
+        _owners[msg.sender].handle = _handle;
+        _owners[msg.sender].profession = _profession;
         _owners[msg.sender].Country = Country;
         _owners[msg.sender].timezone = timezone;
     }
